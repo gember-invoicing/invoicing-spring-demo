@@ -12,7 +12,6 @@ import java.time.LocalDate;
 
 public class InvoiceLineImpl implements InvoiceLine {
 
-    @JsonIgnore
     private BigDecimal lineAmount;
     private InvoiceLineVatType invoiceLineVatType;
 
@@ -46,7 +45,6 @@ public class InvoiceLineImpl implements InvoiceLine {
 
     @JsonDeserialize(using = LocalDateDeserializer.class)
     public void setVatReferenceDate(LocalDate vatReferenceDate) {
-        System.out.println("InvoiceLineImpl::setVatReferenceDate");
         this.vatReferenceDate = vatReferenceDate;
     }
 

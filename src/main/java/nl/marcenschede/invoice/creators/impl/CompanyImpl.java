@@ -6,9 +6,6 @@ import nl.marcenschede.invoice.core.VatCalculationPolicy;
 import java.util.Map;
 import java.util.Optional;
 
-/**
- * Created by marc on 11/10/2016.
- */
 public class CompanyImpl implements Company {
     private VatCalculationPolicy vatCalculationPolicy;
     private String primaryCountryIso;
